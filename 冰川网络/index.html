@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>冰川网络</title>
+    <style>
+        *{margin: 0px;padding: 0px;overflow: hidden;text-decoration: none;font-size: 14px;list-style: none;}
+        img{
+            width: 100px;
+            cursor: pointer;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+        }
+        ul:first-child{
+            display: flex;
+            align-items: center;
+            order: 1;
+        }
+        ul:first-child li{
+            margin: 0px 30px;
+        }
+        ul:nth-of-type(2){
+            order: 1;
+        }
+        button{
+            width: 80px;
+            border:1px solid white;
+            height: 30px;
+            background: transparent;
+            color:white;
+            cursor: pointer;
+        }
+        a{color:white;}
+        a:hover{text-decoration: underline;}
+        video{
+            position: fixed;
+            top:0px;
+            left:0px;
+            z-index: -1;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 550px;
+        }
+        section div:first-child{
+            font-size: 60px;
+            color:white;
+        }
+        section div form input{
+            width: 420px;
+            height: 50px;
+            border-radius: 30px;
+            border:1px solid white;
+            padding-left: 30px;
+            outline: none;
+        }
+        section div:nth-of-type(2){
+            margin-top: 70px;
+        }
+        /*悼念的时候，页面全变灰色，只需在悼念的html页面加样式*/
+        /*html{*/
+        /*    filter: grayscale(100%);*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="img/ice.png" alt=""></li>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">人在冰川</a></li>
+                <li><a href="#">校招职位</a></li>
+                <li><a href="#">社招职位</a></li>
+                <li><a href="#">公司介绍</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+            <ul>
+                <li><button>登录</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <video src="assets/ice.mp4" loop autoplay preload="auto" muted></video>
+    </main>
+    <section>
+        <div>
+            工作就选我所爱 有钱 有趣 有未来
+        </div>
+        <div>
+            <form action="#" method="post">
+                <input type="text" placeholder="输入职位关键字">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
